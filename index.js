@@ -4,11 +4,11 @@ window.XMLHttpRequest = function () {
     const allowableMethods = ['GET', 'POST'];
     this.xhr = new window.oldXMLHttpRequest();
     for (let attr in this.xhr) {
-        let type = "";
+        let type = '';
         try {
             type = typeof this.xhr[attr]
         } catch (e) {}
-        if (type === "function") {
+        if (type === 'function') {
             this[attr] = function() {
                 let args = [].slice.call(arguments)
                 return this.xhr[attr].apply(this.xhr, args);
