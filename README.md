@@ -4,22 +4,22 @@
 ## 安装
 
 ### 1. 直接 \<script\> 引入
-```
+```html
 <script src="path/to/onlyGetPost.js"></script>
 ```
 or
-```
+```html
 <script src="path/to/onlyGetPost.min.js"></script>
 ```
 
 ### 2. NPM
-```
+```bash
 $ npm install onlyGetPost [--save]
 ```
 
 ## 使用
 > 使用axios作为示例，也支持其他 ajax 库。
-```
+```js
 // 开启hook
 onlyGetPost.hook();
 axios.delete('/user/1') // ====> POST '/user/1?_methods=DELETE'
