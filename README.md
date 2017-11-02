@@ -14,7 +14,7 @@ or
 
 ### 2. NPM
 ```bash
-$ npm install onlyGetPost [--save]
+$ npm install only-get-post [--save]
 ```
 
 ## 使用
