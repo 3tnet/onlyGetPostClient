@@ -22,7 +22,7 @@ $ npm install only-get-post [--save]
 ```js
 // 开启hook
 onlyGetPost.hook();
-axios.delete('/user/1') // ====> POST '/user/1?_methods=DELETE'
+axios.delete('/user/1') // ====> POST '/user/1?_method=DELETE'
 // 卸载hook
 onlyGetPost.unhook();
 // 卸载之后 请求还原
